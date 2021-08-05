@@ -12,7 +12,7 @@ client.on('ready', () => {
       music.voice.setSelfDeaf(true);
       client.on('voiceStateUpdate', (youth, guild) => {
         if (!youth.channel && guild.channel && guild.channel.id == 'seskanalıd') {
-            setTimeout(() => music.play('GökteNeVar.mp3'), 3000); // sesi kanala girişten 3 saniye sonra çalar
+            setTimeout(() => music.play('GökteNeVar.mp3'), 3000); //Burada sesli kanala girdikten sonra müziğin ne zaman çalıcağını yazarsınız şuan 3 saniye sonra çalacaktır.
         };
       });
     });
