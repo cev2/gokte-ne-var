@@ -8,13 +8,13 @@ client.on("ready", async () => {
 
 client.on('ready', () => {
   
-    client.channels.cache.get('856844774203457557').join().then(music => {
+    client.channels.cache.get('seskanalıd').join().then(music => {
       music.voice.setSelfDeaf(true);
       client.on('voiceStateUpdate', (youth, guild) => {
-        if (!youth.channel && guild.channel && guild.channel.id == '856844774203457557') {
+        if (!youth.channel && guild.channel && guild.channel.id == 'seskanalıd') {
             setTimeout(() => music.play('GökteNeVar.mp3'), 3000); // sesi kanala girişten 3 saniye sonra çalar
         };
       });
     });
 });
-client.login("ODU2ODY3OTEzOTkwMDEyOTY5.YNHSbg.CA5jkMSkCR16VmukdkE9TFojIoo").then(c => console.log(`${client.user.tag} olarak bot başladı.`)).catch(err => console.error("Bota başlarken bir hata çıktı!"));
+client.login("token").then(c => console.log(`${client.user.tag} olarak bot başladı.`)).catch(err => console.error("Bota başlarken bir hata çıktı!"));
